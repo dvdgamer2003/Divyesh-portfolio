@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyesh's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">PORTFOLIO<span>DIVYESH</span></a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Experience</a>
+            <a href="#skills">Expertise</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Connect</a>
+            
+            <!-- Add theme switcher dropdown -->
+            <div class="theme-dropdown">
+                <button class="theme-toggle">
+                    <i class='bx bx-palette'></i>
+                    <span>Theme</span>
+                </button>
+                <div class="theme-options">
+                    <button class="theme-btn" data-theme="dark">
+                        <i class='bx bx-moon'></i>
+                        Dark
+                    </button>
+                    <button class="theme-btn" data-theme="light">
+                        <i class='bx bx-sun'></i>
+                        Light
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <!-- Add video background -->
+        <video class="home-video" autoplay muted loop playsinline>
+            <source src="images/ved1.mp4" type="video/mp4">
+        </video>
+        
+        <!-- Add overlay -->
+        <div class="video-overlay"></div>
+
+        <div class="home-container">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Divyesh Ravane</span></h1>
+                
+                <div class="text-animate">
+                    <h3 class="profession-text"></h3>
+                </div>
+                
+                <div class="intro-text">
+                    <p class="typing-text"></p>
+                </div>
+
+                <div class="btn-box">
+                    <a href="assets/Divyesh_Resume.pdf" target="_blank" class="btn">View CV</a>
+                    <a href="#contact" class="btn">Let's Talk</a>
+                </div>
+                
+                <div class="home-sci">
+                    <div class="social-container">
+                        <a href="https://www.linkedin.com/in/divyesh-ravane-194753292" target="_blank" class="social-icon linkedin">
+                            <i class='bx bxl-linkedin'></i>
+                            <span class="tooltip">LinkedIn</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-container">
+                        <a href="https://www.instagram.com/divyesh_06" target="_blank" class="social-icon instagram">
+                            <i class='bx bxl-instagram'></i>
+                            <span class="tooltip">Instagram</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-container">
+                        <a href="https://github.com/dvdgamer2003/DIVYESH-PROJECTS.git" target="_blank" class="social-icon github">
+                            <i class='bx bxl-github'></i>
+                            <span class="tooltip">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-imgHover"></div>
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-container">
+            <div class="about-img">
+                <img src="images/about.jpg" alt="Divyesh Ravane">
+                <span class="circle-spin"></span>
+            </div>
+
+            <div class="about-content">
+                <h3>Passionate Developer & Tech Enthusiast</h3>
+                
+                <div class="about-text">
+                    <p>
+                        Welcome to my portfolio! I'm a Computer Science Engineering student with a passion for creating innovative digital solutions. My journey in technology is driven by curiosity and a desire to solve real-world problems through code.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class='bx bx-code-alt'></i>
+                            <span>Full Stack Development</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class='bx bx-data'></i>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class='bx bx-brain'></i>
+                            <span>AI/ML Enthusiast</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        Currently pursuing my degree at PCCOER, Pune, I focus on developing scalable applications and exploring emerging technologies. I believe in continuous learning and staying updated with the latest tech trends.
+                    </p>
+                </div>
+
+                <div class="btn-box btns">
+                    <a href="#contact" class="btn">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- education/journey section -->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="date">2010 - 2019</div>
+                        <h3>School Education</h3>
+                        <p>I have Completed my school from J.D.Chaware Vidya Mandir, Karanja Lad.</p>
+                        <div class="timeline-station"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="date">2020 - 2021</div>
+                        <h3>Junior College</h3>
+                        <p>I have completed my HSC from Mahatama Gandhi Junior College, Varangaon.</p>
+                        <div class="timeline-station"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="date">2023 - 2027</div>
+                        <h3>Bachelor in Computer Engineering</h3>
+                        <p>Currently I am pursuing B.E in Computer Engineering from Pimpri Chinchwad College of Engineering and Research, Pune.</p>
+                        <div class="timeline-station"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="date">2023 - Present</div>
+                        <h3>Web Development</h3>
+                        <p>Learning and implementing modern web technologies including HTML, CSS, JavaScript, and React.</p>
+                        <div class="timeline-station"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-group">
+                <div class="skill-circle">
+                    <div class="sphere">
+                        <div class="sphere-content">
+                            <div class="percent">100%</div>
+                            <div class="skill-name">HTML/CSS/JS</div>
+                        </div>
+                        <div class="sphere-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="skill-circle">
+                    <div class="sphere">
+                        <div class="sphere-content">
+                            <div class="percent">85%</div>
+                            <div class="skill-name">Java</div>
+                        </div>
+                        <div class="sphere-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="skill-circle">
+                    <div class="sphere">
+                        <div class="sphere-content">
+                            <div class="percent">80%</div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="sphere-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="skill-circle">
+                    <div class="sphere">
+                        <div class="sphere-content">
+                            <div class="percent">90%</div>
+                            <div class="skill-name">Web Design</div>
+                        </div>
+                        <div class="sphere-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="skill-circle">
+                    <div class="sphere">
+                        <div class="sphere-content">
+                            <div class="percent">75%</div>
+                            <div class="skill-name">DSA</div>
+                        </div>
+                        <div class="sphere-shadow"></div>
+                    </div>
+                </div>
+
+                <div class="skill-circle">
+                    <div class="sphere">
+                        <div class="sphere-content">
+                            <div class="percent">85%</div>
+                            <div class="skill-name">Problem Solving</div>
+                        </div>
+                        <div class="sphere-shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Update the projects section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <!-- Vedas Vision Project -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Vedas Vision</h3>
+                    <p>An innovative chatbot developed for Smart India Hackathon. Utilizes AI/ML for intelligent responses and natural language processing.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>NLP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Website Project -->
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive personal portfolio website showcasing my skills, projects, and experiences. Features modern design and smooth animations.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Move GitHub banner here -->
+        <div class="github-banner">
+            <a href="https://github.com/dvdgamer2003/DIVYESH-PROJECTS.git" target="_blank" class="github-banner-link">
+                <i class='bx bxl-github'></i>
+                <span>Visit GitHub For More Interesting Projects</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Update the contact section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <div class="contact-container">
+            <div class="contact-box">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3 style="font-weight: 800;">Get In Touch</h3>
+                    <div class="info-item">
+                        <i class='bx bxs-user'></i>
+                        <div>
+                            <h4 style="font-weight: 700;">Name</h4>
+                            <p style="font-weight: 600;">Divyesh Ravane</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class='bx bxs-envelope'></i>
+                        <div>
+                            <h4 style="font-weight: 700;">Email</h4>
+                            <p style="font-weight: 600;">divyesh.ravane_comp23@pccoer.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class='bx bxs-map'></i>
+                        <div>
+                            <h4 style="font-weight: 700;">Location</h4>
+                            <p style="font-weight: 600;">Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form-divider"></div>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="be66eb68-f030-45d6-a304-07cfe1cdbef7">
+                    
+                    <div class="input-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <i class='bx bxs-user-circle'></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <i class='bx bxs-envelope-open'></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <i class='bx bxs-edit-alt'></i>
+                    </div>
+                    
+                    <div class="input-box">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <i class='bx bxs-message-rounded-detail'></i>
+                    </div>
+                    
+                    <button type="submit" class="btn">
+                        <i class='bx bxs-paper-plane'></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer design -->
+    <footer>
+        <div class="footer-content">
+            <p class="animate-text">&copy; 2024 <span>Divyesh Ravane</span>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
