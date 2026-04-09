@@ -533,26 +533,92 @@ section {
 /* ======= Resume Section ======= */
 .resume {
     background-color: var(--bg-color);
-    text-align: center;
 }
 
 .resume-wrapper {
     background-color: var(--bg-alt);
-    padding: 4rem 2rem;
     border-radius: var(--border-radius);
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     border: 1px solid rgba(255,255,255,0.05);
+    overflow: hidden;
 }
 
-.resume-wrapper h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.resume-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.resume-wrapper p {
-    margin-bottom: 2rem;
+.resume-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1rem;
+    border-right: 1px solid rgba(255,255,255,0.05);
+    gap: 0.5rem;
+}
+
+.resume-stat:last-child {
+    border-right: none;
+}
+
+.stat-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.85rem;
     color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.resume-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 3rem;
+    gap: 2rem;
+}
+
+.resume-cta-text h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+}
+
+.resume-cta-text p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.3rem;
+}
+
+@media (max-width: 768px) {
+    .resume-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-stat:nth-child(2) {
+        border-right: none;
+    }
+
+    .resume-stat:nth-child(1),
+    .resume-stat:nth-child(2) {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .resume-cta {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
 }
 
 /* ======= Contact Section ======= */
