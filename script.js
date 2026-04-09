@@ -170,19 +170,15 @@ const footer = document.querySelector('footer');
 const typingText = document.querySelector('.typing-text');
 const professionText = document.querySelector('.profession-text');
 
-// Constants
 const professions = [
-    "Software Designer",
-    "Full Stack Developer",
-    "Web Developer",
-    "Python Developer",
-    "Java Developer",
-    "Frontend Developer",
+    "Computer Science Engineering Student",
+    "Full Stack Developer Intern",
+    "MERN Stack Developer",
     "Backend Developer",
-    "UI/UX Designer"
+    "React Native Enthusiast"
 ];
 
-const text = "I am a dedicated Computer Science Engineering student at Pimpri Chinchwad College of Engineering and Research, Pune. With a strong foundation in Java, Python, and web development, I combine technical expertise with creative problem-solving skills. My recent work includes developing Vedas Vision, an innovative chatbot for the Smart India Hackathon. I'm passionate about creating efficient solutions and eager to contribute to meaningful projects in software development.";
+const text = "I am a Computer Science Engineering student and Full Stack Developer Intern with hands-on experience in building scalable web and mobile applications using the MERN stack and RESTful APIs. I have a strong background in backend development, database design, and real-time systems, with proven ability to deliver production-oriented, project-based solutions in academic and professional environments.";
 
 // State variables
 let typingIndex = 0;
