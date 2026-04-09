@@ -1,396 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyesh's Portfolio</title>
-
+    <title>Divyesh Ravane | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- header design -->
+    <!-- Navigation -->
     <header class="header">
-        <a href="#" class="logo">PORTFOLIO<span>DIVYESH</span></a>
-
+        <a href="#home" class="logo">divyesh.dev</a>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#education">Experience</a>
-            <a href="#skills">Expertise</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Connect</a>
+            <a href="#education">Education</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
             
-            <!-- Add theme switcher dropdown -->
-            <div class="theme-dropdown">
-                <button class="theme-toggle">
-                    <i class='bx bx-palette'></i>
-                    <span>Theme</span>
-                </button>
-                <div class="theme-options">
-                    <button class="theme-btn" data-theme="dark">
-                        <i class='bx bx-moon'></i>
-                        Dark
-                    </button>
-                    <button class="theme-btn" data-theme="light">
-                        <i class='bx bx-sun'></i>
-                        Light
-                    </button>
-                </div>
-            </div>
+            <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle dark mode">
+                <i class='bx bx-moon'></i>
+            </button>
         </nav>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="menu-icon" id="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>
     </header>
 
-    <!-- home section design -->
+    <!-- Home Section -->
     <section class="home" id="home">
-        <!-- Add video background -->
-        <video class="home-video" autoplay muted loop playsinline>
-            <source src="images/ved1.mp4" type="video/mp4">
-        </video>
-        
-        <!-- Add overlay -->
-        <div class="video-overlay"></div>
-
         <div class="home-container">
             <div class="home-content">
-                <h1>Hi, I'm <span>Divyesh Ravane</span></h1>
-                
-                <div class="text-animate">
-                    <h3 class="profession-text"></h3>
+                <p class="greeting">Hi, my name is</p>
+                <h1>Divyesh Ravane.</h1>
+                <h2 class="dynamic-title"><span class="profession-text">Computer Science Engineer</span></h2>
+                <p class="summary-text">
+                    I'm a Full Stack Developer Intern specializing in building exceptional digital experiences. I focus on creating scalable, user-centric web and mobile applications using modern technologies framework.
+                </p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#resume" class="btn btn-secondary">View Resume</a>
                 </div>
                 
-                <div class="intro-text">
-                    <p class="typing-text"></p>
-                </div>
-
-                <div class="btn-box">
-                    <a href="assets/Divyesh_Resume.pdf" target="_blank" class="btn">View CV</a>
-                    <a href="#contact" class="btn">Let's Talk</a>
-                </div>
-                
-                <div class="home-sci">
-                    <div class="social-container">
-                        <a href="https://www.linkedin.com/in/divyesh-ravane-194753292" target="_blank" class="social-icon linkedin">
-                            <i class='bx bxl-linkedin'></i>
-                            <span class="tooltip">LinkedIn</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-container">
-                        <a href="https://www.instagram.com/divyesh_06" target="_blank" class="social-icon instagram">
-                            <i class='bx bxl-instagram'></i>
-                            <span class="tooltip">Instagram</span>
-                        </a>
-                    </div>
-                    
-                    <div class="social-container">
-                        <a href="https://github.com/dvdgamer2003/DIVYESH-PROJECTS.git" target="_blank" class="social-icon github">
-                            <i class='bx bxl-github'></i>
-                            <span class="tooltip">GitHub</span>
-                        </a>
-                    </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/divyesh-ravane-194753292" target="_blank" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/dvdgamer2003/DIVYESH-PROJECTS.git" target="_blank" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://www.instagram.com/divyesh_06" target="_blank" aria-label="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
                 </div>
             </div>
-
-            <div class="home-imgHover"></div>
+            <!-- Optional Home Decorative Graphic / Image Placeholder -->
+            <div class="home-image">
+                <img src="https://drive.google.com/uc?export=view&id=1ADi95BOCV4wC01YWnc7gDtJBdFilkxhG" alt="Divyesh Ravane" class="profile-img">
+            </div>
         </div>
     </section>
 
-    <!-- about section design -->
+    <!-- About Section -->
     <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-
+        <div class="section-heading">
+            <h2>About Me</h2>
+        </div>
         <div class="about-container">
-            <div class="about-img">
-                <img src="images/about.jpg" alt="Divyesh Ravane">
-                <span class="circle-spin"></span>
+            <div class="about-text">
+                <p>
+                    I am a Computer Science & Engineering student and Full Stack Developer Intern with a passion for designing scalable software ecosystems. Based in Pune, India, my journey in tech is driven by curiosity and a relentless desire to construct optimized real-time systems.
+                </p>
+                <p>
+                    I am currently pursuing my degree at PCCOER, Pune, maintaining a CGPA of 8.63/10. My core competency lies in architecting backend solutions and integrating robust APIs.
+                </p>
+                <ul class="highlight-list">
+                    <li><i class='bx bx-check-circle'></i> MERN Stack Architecture</li>
+                    <li><i class='bx bx-check-circle'></i> Real-Time Database Design</li>
+                    <li><i class='bx bx-check-circle'></i> Advanced Problem Solving</li>
+                </ul>
             </div>
-
-            <div class="about-content">
-                <h3>Computer Science & Engineering Student</h3>
-                
-                <div class="about-text">
-                    <p>
-                        Welcome to my portfolio! I am a Full Stack Developer Intern with hands-on experience in building scalable web and mobile applications using the MERN stack and RESTful APIs.
-                    </p>
-                    
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <i class='bx bx-code-alt'></i>
-                            <span>MERN Stack Development</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class='bx bx-data'></i>
-                            <span>Database Design</span>
-                        </div>
-                        <div class="detail-item">
-                            <i class='bx bx-network-chart'></i>
-                            <span>Real-Time Systems</span>
-                        </div>
-                    </div>
-
-                    <p>
-                        With a strong background in backend development and real-time systems, I have a proven ability to deliver production-oriented, project-based solutions in academic and professional environments. I am currently pursuing my degree at PCCOER, Pune (CGPA: 8.63/10).
-                    </p>
-                </div>
-
-                <div class="btn-box btns">
-                    <a href="#contact" class="btn">Let's Connect</a>
+            <div class="about-visual">
+                <!-- A clean decorative abstract shape or professional headshot container -->
+                <div class="abstract-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Tech Enthusiast</h3>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- education/journey section -->
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
-
-        <div class="timeline-container">
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="date">Jan 2026 – Present</div>
-                        <h3>Full Stack Developer Intern</h3>
-                        <p>Scriplet Infosystems, Pune, India. Undergoing structured training in Angular, PHP, and learning REST API integration, backend logic, and component-based frontend architecture.</p>
-                        <div class="timeline-station"></div>
-                    </div>
-                </div>
-
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="date">June 2023 – July 2027</div>
-                        <h3>Bachelor in Computer Engineering</h3>
-                        <p>Currently pursuing B.E in CSE at Pimpri Chinchwad College of Engineering and Research, Pune with a CGPA of 8.63/10.</p>
-                        <div class="timeline-station"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- skills section -->
+    <!-- Skills Section -->
     <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-
-        <div class="skills-container">
-            <div class="skills-group">
-                <div class="skill-circle">
-                    <div class="sphere">
-                        <div class="sphere-content">
-                            <div class="percent">90%</div>
-                            <div class="skill-name">React.js</div>
-                        </div>
-                        <div class="sphere-shadow"></div>
-                    </div>
-                </div>
-
-                <div class="skill-circle">
-                    <div class="sphere">
-                        <div class="sphere-content">
-                            <div class="percent">85%</div>
-                            <div class="skill-name">Node.js</div>
-                        </div>
-                        <div class="sphere-shadow"></div>
-                    </div>
-                </div>
-
-                <div class="skill-circle">
-                    <div class="sphere">
-                        <div class="sphere-content">
-                            <div class="percent">85%</div>
-                            <div class="skill-name">Express.js</div>
-                        </div>
-                        <div class="sphere-shadow"></div>
-                    </div>
-                </div>
-
-                <div class="skill-circle">
-                    <div class="sphere">
-                        <div class="sphere-content">
-                            <div class="percent">80%</div>
-                            <div class="skill-name">MongoDB</div>
-                        </div>
-                        <div class="sphere-shadow"></div>
-                    </div>
-                </div>
-
-                <div class="skill-circle">
-                    <div class="sphere">
-                        <div class="sphere-content">
-                            <div class="percent">95%</div>
-                            <div class="skill-name">JavaScript</div>
-                        </div>
-                        <div class="sphere-shadow"></div>
-                    </div>
-                </div>
-
-                <div class="skill-circle">
-                    <div class="sphere">
-                        <div class="sphere-content">
-                            <div class="percent">90%</div>
-                            <div class="skill-name">Tailwind CSS</div>
-                        </div>
-                        <div class="sphere-shadow"></div>
-                    </div>
-                </div>
+        <div class="section-heading">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class='bx bxl-react'></i>
+                <h3>React.js</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-nodejs'></i>
+                <h3>Node.js</h3>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-mongodb'></i>
+                <h3>MongoDB</h3>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-javascript'></i>
+                <h3>JavaScript</h3>
+                <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class='bx bxl-tailwind-css'></i>
+                <h3>Tailwind CSS</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <i class='bx bx-server'></i>
+                <h3>Express.js</h3>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Update the projects section -->
+    <!-- Projects Section -->
     <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
-
-        <div class="projects-container">
-            <!-- GetBeds+ Project -->
-            <div class="project-card">
-                <div class="project-content">
+        <div class="section-heading">
+            <h2>Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <!-- GetBeds+ -->
+            <article class="project-box">
+                <div class="project-info">
+                    <span class="project-type">Web Application</span>
                     <h3>GetBeds+</h3>
                     <p>Hospital management system with emergency booking, OPD queues, real-time bed tracking, Socket.io updates, AI chatbot, and Razorpay workflows.</p>
-                    <div class="tech-stack">
+                    <div class="tech-tags">
                         <span>MERN Stack</span>
                         <span>TypeScript</span>
                         <span>Socket.io</span>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- EduGames Project -->
-            <div class="project-card">
-                <div class="project-content">
+            <!-- EduGames -->
+            <article class="project-box">
+                <div class="project-info">
+                    <span class="project-type">Mobile Application</span>
                     <h3>EduGames</h3>
                     <p>Gamified, curriculum-aligned learning platform for rural areas with offline-first architecture, real-time student tracking, and dashboards.</p>
-                    <div class="tech-stack">
+                    <div class="tech-tags">
                         <span>React Native</span>
                         <span>Node.js</span>
                         <span>AI</span>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Samachar 2.0 Project -->
-            <div class="project-card">
-                <div class="project-content">
+            </article>
+
+            <!-- Samachar 2.0 -->
+            <article class="project-box">
+                <div class="project-info">
+                    <span class="project-type">Web Platform</span>
                     <h3>Samachar 2.0</h3>
                     <p>Full-stack E-News platform with role-based access control, responsive UI using Tailwind CSS, and MySQL for structured content management.</p>
-                    <div class="tech-stack">
+                    <div class="tech-tags">
                         <span>React.js</span>
                         <span>Express.js</span>
                         <span>MySQL</span>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Student ERP Project -->
-            <div class="project-card">
-                <div class="project-content">
+            </article>
+
+            <!-- Student ERP -->
+            <article class="project-box">
+                <div class="project-info">
+                    <span class="project-type">Enterprise System</span>
                     <h3>Student ERP</h3>
                     <p>A full-stack Academic Management ERP system for student records, attendance, responsive dashboards, and REST APIs for academic workflows.</p>
-                    <div class="tech-stack">
+                    <div class="tech-tags">
                         <span>MongoDB</span>
                         <span>React.js</span>
                         <span>Node.js</span>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Move GitHub banner here -->
-        <div class="github-banner">
-            <a href="https://github.com/dvdgamer2003/DIVYESH-PROJECTS.git" target="_blank" class="github-banner-link">
-                <i class='bx bxl-github'></i>
-                <span>Visit GitHub For More Interesting Projects</span>
-            </a>
+            </article>
         </div>
     </section>
 
-    <!-- Update the contact section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        
-        <div class="contact-container">
-            <div class="contact-box">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h3 style="font-weight: 800;">Get In Touch</h3>
-                    <div class="info-item">
-                        <i class='bx bxs-user'></i>
-                        <div>
-                            <h4 style="font-weight: 700;">Name</h4>
-                            <p style="font-weight: 600;">Divyesh Ravane</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class='bx bxs-envelope'></i>
-                        <div>
-                            <h4 style="font-weight: 700;">Email</h4>
-                            <p style="font-weight: 600;">divyeshravane21543@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="info-item">
-                        <i class='bx bxs-map'></i>
-                        <div>
-                            <h4 style="font-weight: 700;">Location</h4>
-                            <p style="font-weight: 600;">Pune, Maharashtra, India</p>
-                        </div>
-                    </div>
+    <!-- Education & Journey Section -->
+    <section class="education" id="education">
+        <div class="section-heading">
+            <h2>Education & Experience</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jan 2026 – Present</div>
+                <div class="timeline-content">
+                    <h3>Full Stack Developer Intern</h3>
+                    <h4>Scriplet Infosystems, Pune, India</h4>
+                    <p>Undergoing structured training in Angular, PHP, and learning REST API integration, backend logic, and component-based frontend architecture.</p>
                 </div>
-
-                <!-- Contact Form -->
-                <div class="form-divider"></div>
-                
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                    <input type="hidden" name="access_key" value="be66eb68-f030-45d6-a304-07cfe1cdbef7">
-                    
-                    <div class="input-box">
-                        <input type="text" name="name" placeholder="Full Name" required>
-                        <i class='bx bxs-user-circle'></i>
-                    </div>
-                    
-                    <div class="input-box">
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <i class='bx bxs-envelope-open'></i>
-                    </div>
-                    
-                    <div class="input-box">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <i class='bx bxs-edit-alt'></i>
-                    </div>
-                    
-                    <div class="input-box">
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <i class='bx bxs-message-rounded-detail'></i>
-                    </div>
-                    
-                    <button type="submit" class="btn">
-                        <i class='bx bxs-paper-plane'></i>
-                        Send Message
-                    </button>
-                </form>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">June 2023 – July 2027</div>
+                <div class="timeline-content">
+                    <h3>Bachelor in Computer Engineering</h3>
+                    <h4>Pimpri Chinchwad College of Engineering and Research, Pune</h4>
+                    <p>Currently pursuing B.E in CSE focusing on software engineering, data structures, and system design, maintaining a CGPA of 8.63/10.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- footer design -->
-    <footer>
+    <!-- Achievements & Certifications -->
+    <section class="achievements" id="achievements">
+        <div class="section-heading">
+            <h2>Achievements & Certifications</h2>
+        </div>
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <i class='bx bx-trophy'></i>
+                <div class="ach-text">
+                    <h3>Smart India Hackathon (SIH) 2025</h3>
+                    <p>Runner-Up</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <i class='bx bx-medal'></i>
+                <div class="ach-text">
+                    <h3>Project-Based Learning Competition</h3>
+                    <p>Winner (PCCOER)</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <i class='bx bx-certification'></i>
+                <div class="ach-text">
+                    <h3>Full Stack Development (MERN)</h3>
+                    <p>Apna College Certification</p>
+                </div>
+            </div>
+            <div class="achievement-card">
+                <i class='bx bx-certification'></i>
+                <div class="ach-text">
+                    <h3>Database Programming with SQL</h3>
+                    <p>Oracle Academy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume" id="resume">
+        <div class="resume-wrapper">
+            <h2>Curriculum Vitae</h2>
+            <p>For a detailed breakdown of my professional journey and experiences, you can view my full resume.</p>
+            <a href="DIVYESH.RAVANE.pdf" target="_blank" class="btn btn-primary"><i class='bx bx-download'></i> Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-heading">
+            <h2>Get In Touch</h2>
+            <p>I am currently open for new opportunities. My inbox is always open.</p>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-card">
+                <i class='bx bx-envelope'></i>
+                <h3>Email</h3>
+                <p>divyeshravane21543@gmail.com</p>
+                <a href="mailto:divyeshravane21543@gmail.com" class="contact-link">Write me <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="contact-card">
+                <i class='bx bx-phone'></i>
+                <h3>Phone</h3>
+                <p>+91 8999867349</p>
+            </div>
+            <div class="contact-card">
+                <i class='bx bxs-map'></i>
+                <h3>Location</h3>
+                <p>Pune, Maharashtra, India</p>
+            </div>
+        </div>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form-minimal">
+            <input type="hidden" name="access_key" value="be66eb68-f030-45d6-a304-07cfe1cdbef7">
+            <div class="input-grid">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="footer-content">
-            <p class="animate-text">&copy; 2024 <span>Divyesh Ravane</span>. All rights reserved.</p>
+            <div class="footer-logo">divyesh.dev</div>
+            <p>&copy; 2026 Divyesh Ravane. Built with pristine code.</p>
         </div>
     </footer>
-    
-
 
     <script src="script.js"></script>
 </body>
-
 </html>
